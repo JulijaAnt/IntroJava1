@@ -28,9 +28,5 @@ public class Main {
     System.out.println(6<9 && 9>2);
     System.out.println(5>9 || 8>3);
     System.out.println(8==2 && 7<6);
-    if ( number < 9 && number > 14){
-        System.out.println("ok");
-    } else {
-        System.out.println("not ok");
     }
-}}
+}
