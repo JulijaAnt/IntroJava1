@@ -9,9 +9,9 @@ public class Conditional {
             System.out.println("not ok");
     }
     int Newnumber = 12;
-    if ( number > 9 ){
+    if ( Newnumber > 9 ){
             System.out.println("10,11,12,13,14");
-    } else {
+    }           else {
             System.out.println("not ok");
     }
 }
