@@ -38,6 +38,7 @@ public class Strin {
 
         //Task 1.Write a program to compare two strings by their length and return output that tells the
             // use rif the strings are equal or not.
+
             String regularString3 = "I will think about it tomorrow";
             String regularString4 = "Tomorrow never comes";
             int length1 = regularString3.length();
