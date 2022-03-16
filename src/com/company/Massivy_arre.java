@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.ArrayList;
 
 public class Massivy_arre {
 
@@ -69,4 +70,24 @@ public class Massivy_arre {
             }
             System.out.println(countera + countere + counteri + countero + counteru);
         }
-}}
+
+        System.out.println("Please enter a word:");
+        String Statement = scanner.next();
+        char[] StatementArray = Statement.toCharArray();
+        ArrayList<Character> vowels = new ArrayList<Character>();
+        for (int z = 0; z < StatementArray.length; z++){
+            vowels.add(StatementArray[z]);
+            for(Character character : vowels){
+                int counter = 0;
+                {
+                    for (int t = 0; t < Statement.length(); t++)
+                    {
+                        if(Statement.charAt(t) == character)
+                        {
+                            counter++;
+                        }
+                    }
+                }
+                System.out.println(character + " " + counter);
+        }
+}}}
