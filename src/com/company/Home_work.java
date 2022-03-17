@@ -68,7 +68,7 @@ public class Home_work {
         if (Wordtoreverse.equalsIgnoreCase(reversedString)) {
             System.out.println("Words are the same " + (reversedString));
         } else {
-            System.out.println("Words are not the same " + (Wordtoreverse)  +  (reversedString));
+            System.out.println("Words are not the same " + (Wordtoreverse) + (reversedString));
         }
         //Write a program that accepts any of the primary colors as a String and retuns the complimentary
         //color of that color  to the user
@@ -78,14 +78,14 @@ public class Home_work {
         String red = "red";
         String blue = "blue";
         String yellow = "yellow";
-        if (PrimeColor.equalsIgnoreCase(red)){
-        System.out.println("Complimentary color to red is green");
-        } else if (PrimeColor.equalsIgnoreCase(blue)){
+        if (PrimeColor.equalsIgnoreCase(red)) {
+            System.out.println("Complimentary color to red is green");
+        } else if (PrimeColor.equalsIgnoreCase(blue)) {
             System.out.println("Complimentary color to blue is orange");
-        } else if (PrimeColor.equalsIgnoreCase(yellow)){
+        } else if (PrimeColor.equalsIgnoreCase(yellow)) {
             System.out.println("Complimentary color to yellow is orange");
         } else {
             System.out.println("Please enter primary colors only");
         }
 
-        }}
+    }}
