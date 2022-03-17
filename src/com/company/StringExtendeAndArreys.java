@@ -6,6 +6,7 @@ public class StringExtendeAndArreys {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        Task:
         System.out.println("Please enter a word:");
         String firstStatement = scanner.next();
         Pattern vowels = Pattern.compile("[a,e,i,o,u,A,E,I,O,U]");

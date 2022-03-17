@@ -52,8 +52,9 @@ public class Home_work {
         } else {
             System.out.println("False");
 
-            //Write a programm that accepts a String form a user and prints an interactive response telling the user
-            //if the word is the same when spelt backwards. E.G.bread when spelt backwards is daerbm which is not the same.
+            //Write a programm that accepts a String form a user and prints an interactive response
+            // telling the user if the word is the same when spelt backwards.
+            // E.G.bread when spelt backwards is daerbm which is not the same.
         }
 
 
