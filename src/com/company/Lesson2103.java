@@ -80,29 +80,45 @@ public class Lesson2103 {
 
             // Write a program that returns the number or amount of hours between two (o'clock) times entered by the user.
 
-            System.out.print("Enter the start hour: ");
-            String userStart = scanner.nextLine(); // 5:00 AM
+            //System.out.print("Enter the start hour: ");
+           // String userStart = scanner.nextLine(); // 5:00 AM
 
-            System.out.print("Enter the end hour: ");
-            String userEnd = scanner.nextLine(); // 8:00 AM
+          //  System.out.print("Enter the end hour: ");
+           // String userEnd = scanner.nextLine(); // 8:00 AM
 
             // Get the value of the hours
-            int startHour = Integer.parseInt(userStart.split(":")[0]);
-            int endHour = Integer.parseInt(userEnd.split(":")[0]);
+          //  int startHour = Integer.parseInt(userStart.split(":")[0]);
+          //  int endHour = Integer.parseInt(userEnd.split(":")[0]);
 
             // If a time entered is in the morning assign it 12 else assign it 24
             // to make it easy to compare numerically.
-            int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24;
-            int amPmTwo = userEnd.split(" ")[1].equals("AM") ? 12 : 24;
+           // int amPmOne = userStart.split(" ")[1].equals("AM") ? 12 : 24;
+           // int amPmTwo = userEnd.split(" ")[1].equals("AM") ? 12 : 24;
 
             // subtract and find out the difference
-            int difference =(endHour+amPmTwo) - (startHour+amPmOne);
-            if (amPmOne < amPmTwo && startHour > endHour) difference +=12;
+           // int difference =(endHour+amPmTwo) - (startHour+amPmOne);
+          //  if (amPmOne < amPmTwo && startHour > endHour) difference +=12;
 
 
-            System.out.println(difference == 0 ? "No time has passed." : difference + " hours");
+          //  System.out.println(difference == 0 ? "No time has passed." : difference + " hours");
 
+            //Write a programm to calculate the age of the person if the user enters the birthday.
+
+
+            System.out.print("Enter a birth date in format: yyyy-mm-dd");
+            LocalDate birthdate = LocalDate.parse(scanner.next());
+            LocalDate today = LocalDate.now();
+            Period period1 = Period.between(birthdate, today);
+            System.out.println("Age in years: " + period1.getYears());
         }
+
+        // calculate the period between 2 dates in days
+        System.out.print("Enter a first date in format: yyyy-mm-dd");
+        LocalDate firsstdate = LocalDate.parse(scanner.next());
+        System.out.print("Enter a second date in format: yyyy-mm-dd");
+        LocalDate secondate = LocalDate.parse(scanner.next());
+        Period period1 = Period.between(firsstdate, secondate);
+        System.out.println("Difference in days: " + period1.getDays());
 
     }}
 
